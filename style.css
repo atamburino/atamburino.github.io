@@ -1,34 +1,30 @@
 /* Palette:
 Off-White: #F5F5F5
 Cool Gray: #B0BEC5
-Muted Blue: #90A4AE
+Vibey Green: #6FBF73
 Soft Teal: #80CBC4
-Dusty Pink: #CF93A6 */
+Dusty Pink: #CF93A6
+*/
 
 /* Reset some default styling */
-body, h1, h2, p, ul {
+body, h1, h2, p, ul, img {
   margin: 0;
   padding: 0;
-}
-
-.container {
-  max-width: 1200px;  /* Sets a maximum width for content */
-  margin: 0 auto;     /* Centers the content */
-  padding: 20px;      /* Inner padding */
+  border: 0;
 }
 
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #F5F5F5;  /* Off-White Background */
-  color: #333;                /* Default text color */
+  color: #333;  /* General dark text color */
 }
 
-/* Basic layout styling */
-header {
-  background: #90A4AE;  /* Muted Blue Header */
-  color: #F5F5F5;       /* Off-White Text */
-  padding: 10px 0;
+/* Basic Layout Styling */
+header, footer {
+  background-color: #6FBF73; /* Vibey Green background */
+  color: #F5F5F5;            /* Off-White text */
+  padding: 20px;
   text-align: center;
 }
 
@@ -43,35 +39,74 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #F5F5F5;       /* Off-White Links */
+  color: #F5F5F5;  /* Off-White text for links */
   text-decoration: none;
 }
 
 nav ul li a:hover {
-  color: #80CBC4;       /* Soft Teal on Hover */
+  color: #80CBC4; /* Soft Teal on Hover */
 }
 
 main {
   padding: 20px;
-  background-color: #F5F5F5; /* Off-White Background */
 }
 
-h1, h2 {
+/* Profile Page Specific Styles */
+.profile-container {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #E0E0E0; /* Light Gray Background */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+  float: left;
+  width: 30%;
+  margin-right: 20px;
+}
+
+.profile-image img {
+  width: 100%;
+  height: auto;
+}
+
+.profile-details {
+  float: left;
+  width: 65%;
+}
+
+.profile-details h2 {
   margin-bottom: 10px;
-  color: #333;          /* Default Heading Color */
+  color: #333; /* Dark Text */
 }
 
-p {
+.profile-details p {
   margin-bottom: 15px;
-  color: #B0BEC5;       /* Cool Gray Text */
+  color: #B0BEC5; /* Cool Gray Text */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #CF93A6; /* Dusty Pink Button */
+  color: #fff;  /* White text on button */
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #80CBC4; /* Soft Teal on Hover */
+}
+
+/* Clear floats */
+.profile-container:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 footer {
-  background: #90A4AE;  /* Muted Blue Footer */
-  color: #F5F5F5;       /* Off-White Text */
-  text-align: center;
-  padding: 10px 0;
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: 0;
 }
