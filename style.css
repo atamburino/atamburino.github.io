@@ -90,6 +90,19 @@ main {
   color: #B0BEC5; /* Cool Gray Text */
 }
 
+.profile-info {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 20px 0; /* Add space around the list */
+}
+
+.profile-info li {
+  margin-bottom: 10px; /* Add space between list items */
+  color: #333; /* Dark text color */
+  font-weight: bold; /* Make the list items stand out */
+}
+
+
 button {
   padding: 10px 20px;
   background-color: #CF93A6; /* Dusty Pink Button */
