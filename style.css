@@ -98,7 +98,8 @@ button {
   border-radius: 4px;
   cursor: pointer;
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 10px; /* Add margin above the button */
+  margin-bottom: 20px; /* Add margin below the button to create space */
 }
 
 button:hover {
