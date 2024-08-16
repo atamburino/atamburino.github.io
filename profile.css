@@ -1,0 +1,57 @@
+/* Profile Page Styles */
+.profile-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #E0E0E0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    float: left;
+    width: 30%;
+    margin-right: 20px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+}
+
+.profile-details {
+    float: left;
+    width: 65%;
+}
+
+.profile-details h2 {
+    margin-bottom: 10px;
+}
+
+.profile-details p {
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Clear floats */
+.profile-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
