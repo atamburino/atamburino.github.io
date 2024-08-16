@@ -100,7 +100,9 @@ main {
   margin-bottom: 10px; /* Add space between list items */
   color: #333; /* Dark text color */
   font-weight: bold; /* Make the list items stand out */
+  padding-left: 0; /* Ensure no extra padding is added on the left */
 }
+
 
 
 button {
