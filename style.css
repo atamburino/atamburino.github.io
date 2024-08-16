@@ -11,6 +11,7 @@ body, h1, h2, p, ul, img {
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -21,7 +22,7 @@ body {
 }
 
 /* Basic Layout Styling */
-header, footer {
+header {
   background-color: #6FBF73; /* Vibey Green background */
   color: #F5F5F5;            /* Off-White text */
   padding: 20px;
@@ -49,15 +50,17 @@ nav ul li a:hover {
 
 main {
   padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Profile Page Specific Styles */
 .profile-container {
-  width: 80%;
-  margin: 20px auto;
   background-color: #E0E0E0; /* Light Gray Background */
   padding: 20px;
+  border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Clear floats */
 }
 
 .profile-image {
@@ -69,6 +72,7 @@ main {
 .profile-image img {
   width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 
 .profile-details {
@@ -91,22 +95,24 @@ button {
   background-color: #CF93A6; /* Dusty Pink Button */
   color: #fff;  /* White text on button */
   border: none;
+  border-radius: 4px;
   cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
 }
 
 button:hover {
   background-color: #80CBC4; /* Soft Teal on Hover */
 }
 
-/* Clear floats */
-.profile-container:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
+/* Footer Styling */
 footer {
+  background-color: #6FBF73; /* Vibey Green background */
+  color: #F5F5F5; /* Off-White text */
+  text-align: center;
+  padding: 20px;
   position: relative;
   width: 100%;
   bottom: 0;
+  margin-top: 20px;
 }
